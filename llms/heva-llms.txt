@@ -1,0 +1,55 @@
+# Heva
+
+> Heva is a healthcare booking platform that connects patients with medical practices,
+> specialists, and healthcare providers — primarily serving Spanish-speaking markets.
+
+## What Heva Does
+
+Heva enables:
+- Discovery of healthcare practices and specialists by specialty and location
+- Online appointment booking with deposit-based confirmation
+- AI-powered booking assistant (Heva AI) for conversational scheduling
+- Online store checkout for purchasing healthcare services and procedures
+- Secure payments via Stripe integration
+
+## Practice Profiles
+
+Each practice on Heva has a public profile at `/practice/{unitId}` containing:
+- Practice name, description, specialties, and specialty categories
+- Location (address, coordinates, embedded map)
+- Contact information (email, phone, WhatsApp)
+- Working hours by day
+- Practice image
+- Patient instructions and announcements
+- Testimonials and ratings
+
+## Store Pages
+
+Each practice can have a store at `/practice/{unitId}/store` listing available services
+with pricing, allowing patients to add procedures to a cart and pay online.
+
+## Public Routes (indexable)
+
+- `/practice/{unitId}`        — Practice profile page
+- `/practice/{unitId}/store`  — Practice service store with pricing
+
+## Private Routes (not indexed)
+
+- `/heva/{unitId}`                              — AI booking conversation (requires auth)
+- `/heva/{unitId}/conversation/{id}`            — Individual conversation (requires auth)
+- `/forms/{embedToken}`                         — Embedded intake forms (private)
+
+## Languages
+
+Heva supports English (primary) and Spanish. Practice pages serve both languages
+via locale detection — same URL, UI switches based on user preference.
+
+## Technology
+
+Built with Next.js 15 App Router. Practice pages are server-side rendered for
+full indexability. Private routes remain client-side only.
+
+## Contact
+
+Website: https://heva.co
+Support: https://wa.me/19297598832

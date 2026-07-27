@@ -1,7 +1,14 @@
 aid: heva
 name: heva
-description: heva is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  heva is an AI-native healthcare and medical-tourism platform that connects patients with
+  vetted medical practices, specialists, and providers across borders, with an initial focus
+  on Spanish-speaking markets. The platform offers practice discovery by specialty and
+  location, deposit-based online appointment booking, a conversational AI booking assistant
+  (Heva AI), an online store for purchasing procedures and services, and secure payments via
+  Stripe. Provider-facing tools cover practice management, patient acquisition,
+  communications, and appointment coordination, delivered through the web and native iOS and
+  Android provider apps. heva is a Techstars-backed company building "care without borders."
 url: https://raw.githubusercontent.com/api-evangelist/heva/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,31 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://heva.co/android-chrome-512x512.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Medical Tourism
+- Practice Management
+- Appointment Booking
+- Artificial Intelligence
+- Payments
+- Cross-Border Care
+- Health Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,22 @@ maintainers:
 common:
 - type: Website
   url: https://heva.co/
+- type: Blog
+  url: https://heva.co/resources
+- type: Support
+  url: https://wa.me/19297598832
+- type: PrivacyPolicy
+  url: https://heva.co/privacy-policy
+- type: TermsOfService
+  url: https://heva.co/terms-of-use
+- type: Login
+  url: https://app.heva.co
+- type: LLMsTxt
+  url: llms/heva-llms.txt
+- type: DomainSecurity
+  url: security/heva-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
